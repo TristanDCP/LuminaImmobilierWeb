@@ -1,15 +1,12 @@
 import './App.css';
 import Header from './screens/templates/header'
+import LastPropertyForSales from './screens/components/lastPropertyForSales'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <Header />
-        <p>
-          Lumina Immobilier
-        </p>
-      </header>
+        <LastPropertyForSales />
     </div>
   );
   
