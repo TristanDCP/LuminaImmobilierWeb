@@ -1,15 +1,16 @@
 import './App.css';
-import Header from './screens/templates/header'
-import LastPropertyForSales from './screens/components/lastPropertyForSales'
+
+import React, { useEffect, useState } from 'react';
+import Properties from './components/properties';
 
 function App() {
-  return (
-    <div className="App">
-        <Header />
-        <LastPropertyForSales />
-    </div>
-  );
-  
+
+    return(
+      <div className="App">
+      <Properties />
+      </div>
+    )
+ 
 }
 
 export default App;
