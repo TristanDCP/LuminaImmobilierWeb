@@ -1,24 +1,26 @@
-import React, { FunctionComponent } from 'react';
-import { useApi } from "../useApi-hooks";
+import React, { FunctionComponent, useState } from 'react';
 
 const List: FunctionComponent = () => {
 
-  // Recuperer la liste des propriétés
-  const { data } = useApi({
-    params: {
-      namespace: "properties/"
-    },
-    defaultValue: { results: [] } //les propriéts sont stockés dans le tableau results
+  const [properties, setProperties] = useState();
+  // read all entities
+  fetch("https://api.lumina.cda4.lh.manusien-ecolelamanu.fr/api/v1/properties", {
+    "method": "GET",
+  })
+  .then(response => response.json())
+  .then(response => {
+    setProperties(response);
+    console.log(properties);
+    console.log(response);
+  })
+  .catch(err => { console.log(err); 
   });
-  console.log(data.results);
 
   return (
-    <div className="list">
-      {data.results.map(({ idParameter, keyParameter, valueParameter}) => {
+    <div>
+      { useState(properties).map(({ id}) => {
         return (
-          <div key={idParameter}>
-            <h3> {keyParameter} </h3>
-            <h3> {valueParameter}</h3>
+          <div key={id}>
           </div>
         );
       })}
