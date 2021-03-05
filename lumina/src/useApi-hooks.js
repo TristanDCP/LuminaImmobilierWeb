@@ -3,7 +3,7 @@ import Axios from "axios";
 
 export const callApiWithAxios = async ({
   method = "get",
-  apiUrl = "https://api.lumina.cda4.lh.manusien-ecolelamanu.fr/api/v1/",
+  apiUrl = "https://api.lumina.cda4.lh.manusien-ecolelamanu.fr/api/v1",
   namespace,
   id,
   payload,
