@@ -13,11 +13,12 @@ class Header extends React.Component {
     render () {
       return (
         <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Lumina</Navbar.Brand>
+        <Navbar.Brand href="/">Lumina</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-            <Nav.Link href="#home">Accueil</Nav.Link>
+            <Nav.Link href="/">Accueil</Nav.Link>
+            <Nav.Link href ="/login">Login</Nav.Link>
             <Nav.Link href="#link">Agences</Nav.Link>
             { <NavDropdown title="Rechercher" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Acheter un bien</NavDropdown.Item>
