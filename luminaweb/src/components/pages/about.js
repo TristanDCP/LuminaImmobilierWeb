@@ -2,15 +2,8 @@ import React from 'react';
 
 const About = () => {
 return (
-	<div
-	style={{
-		display: 'flex',
-		justifyContent: 'Right',
-		alignItems: 'Right',
-		height: '100vh'
-	}}
-	>
-	<h1>About JS</h1>
+	<div>
+	<h1 class="text-center mt-5">Ceci est la page test fourre tout</h1>
 	</div>
 );
 };

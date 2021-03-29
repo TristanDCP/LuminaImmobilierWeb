@@ -1,34 +1,30 @@
 import React from 'react';
-import {
-Nav,
-NavLink,
-Bars,
-NavMenu,
-NavBtn,
-NavBtnLink,
-} from './NavbarElements';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './navbar.css';
+import {Navbar, Nav} from 'react-bootstrap';
+// import Form from 'react-bootstrap/Form';
+// import FormControl from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
 
-const Navbar = () => {
-return (
-	<>
-	<Nav>
-		<Bars />
-		<NavMenu>
-		<NavLink to='/about' activeStyle>
-			About
-		</NavLink>
-		<NavLink to='/events' activeStyle>
-			Events
-		</NavLink>
-		{/* Second Nav */}
-		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-		</NavMenu>
-		<NavBtn>
-		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
-		</NavBtn>
-	</Nav>
-	</>
-);
-};
+const Navigation = () =>{
+    return (
+        <>
+            <Navbar className="bg-green">
+                {/* <Navbar.Brand href="#home">INSERER LOGO ICI</Navbar.Brand> */}
+                <Nav className="mr-auto navlinks">
+                    <Nav.Link className="navlinks"  href="/" activeStyle>Accueil</Nav.Link>
+                    <Nav.Link className="navlinks"  href='/about' activeStyle>Page de Test</Nav.Link>
+                    <Nav.Link className="navlinks" href='/properties' activeStyle>Propriétés</Nav.Link>
+                    <Nav.Link className="navlinks"  href='/profile' activeStyle>Profil</Nav.Link>
+                    <Nav.Link className="navlinks" href='/login' activeStyle>Se connecter</Nav.Link>
+                </Nav>
+                {/* <Form inline>
+                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                <Button variant="outline-primary">Search</Button>
+                </Form> */}
+            </Navbar>
+        </>
+    );
+}
 
-export default Navbar;
+export default Navigation;
