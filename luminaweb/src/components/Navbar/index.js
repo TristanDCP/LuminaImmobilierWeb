@@ -9,9 +9,9 @@ import {Navbar, Nav} from 'react-bootstrap';
 const Navigation = () =>{
     return (
         <>
-            <Navbar className="bg-green">
+            <Navbar className="bg-green d-flex justify-content-around">
                 {/* <Navbar.Brand href="#home">INSERER LOGO ICI</Navbar.Brand> */}
-                <Nav className="mr-auto navlinks">
+                <Nav>
                     <Nav.Link className="navlinks"  href="/" activeStyle>Accueil</Nav.Link>
                     <Nav.Link className="navlinks"  href='/about' activeStyle>Page de Test</Nav.Link>
                     <Nav.Link className="navlinks" href='/properties' activeStyle>Propriétés</Nav.Link>

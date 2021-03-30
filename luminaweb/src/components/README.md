@@ -10,7 +10,7 @@ La navbar est facilement modifiable.
 
 - Importer la page dans le App.js et ajouter sa route en mettant entre crochet le export de la page crée.
 
-Exemple : (App.js) "path='/login' component={LogIn}" =>  (Login.hs) "export default LogIn";
+Exemple : (App.js) "path='/login' component={LogIn}" =>  (Login.js) "export default LogIn";
 
 ## Etape 3 : 
 
