@@ -17,6 +17,7 @@ const Navigation = () =>{
                     <Nav.Link className="navlinks" href='/properties' activeStyle>Propriétés</Nav.Link>
                     <Nav.Link className="navlinks"  href='/profile' activeStyle>Profil</Nav.Link>
                     <Nav.Link className="navlinks" href='/login' activeStyle>Se connecter</Nav.Link>
+                    <Nav.Link className="navlinks" href='/signup' activeStyle>S'inscrire</Nav.Link>
                 </Nav>
                 {/* <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
