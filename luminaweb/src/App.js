@@ -9,6 +9,7 @@ import LogIn from './components/pages/login';
 import Properties from './components/pages/properties';
 import Profile from './components/pages/profile';
 import PropertyDetails from './components/pages/propertyDetail';
+import SignUp from './components/pages/signup';
 
 
 function App() {
@@ -22,9 +23,11 @@ function App() {
 				<Route path='/properties' component={Properties} />
 				<Route path='/profile' component={Profile} />
 				<Route path='/property/:id' component={PropertyDetails} />
+				<Route path='/signup' component={SignUp}/>
 			</Switch>
 		</Router>
 	);
 }
+
 
 export default App;
