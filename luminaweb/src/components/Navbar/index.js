@@ -8,19 +8,6 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 const Navigation = () => {
     return (
-<<<<<<< HEAD
-        <Navbar className="bg-green">
-            {/* <Navbar.Brand href="#home">INSERER LOGO ICI</Navbar.Brand> */}
-            <Nav className="mr-auto navlinks">
-                <Nav.Link className="navlinks" href="/">Accueil</Nav.Link>
-                <Nav.Link className="navlinks" href='/about'>Page de Test</Nav.Link>
-                <Nav.Link className="navlinks" href='/properties'>Propriétés</Nav.Link>
-                <Nav.Link className="navlinks" href='/profile'>Profil</Nav.Link>
-                <Nav.Link className="navlinks" href='/login'>Se connecter</Nav.Link>
-            </Nav>
-            {/* <Form inline>
-=======
-        <>
             <Navbar className="bg-green d-flex justify-content-around">
                 {/* <Navbar.Brand href="#home">INSERER LOGO ICI</Navbar.Brand> */}
                 <Nav>
@@ -32,7 +19,6 @@ const Navigation = () => {
                     <Nav.Link className="navlinks" href='/signup' activeStyle>S'inscrire</Nav.Link>
                 </Nav>
                 {/* <Form inline>
->>>>>>> e7cf785b2885b8aee43864f037cb8a3cbcc2ff9b
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                 <Button variant="outline-primary">Search</Button>
                 </Form> */}
