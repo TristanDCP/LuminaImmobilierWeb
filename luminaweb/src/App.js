@@ -8,21 +8,23 @@ import About from './components/pages/about';
 import LogIn from './components/pages/login';
 import Properties from './components/pages/properties';
 import Profile from './components/pages/profile';
+import PropertyDetails from './components/pages/propertyDetail';
 
 
 function App() {
-return (
-	<Router>
-	<Navigation />
-	<Switch>
-		<Route path='/' exact component={Home} />
-		<Route path='/about' component={About} />
-		<Route path='/login' component={LogIn}/>
-		<Route path='/properties' component={Properties}/>
-		<Route path='/profile' component={Profile}/>
-	</Switch>
-	</Router>
-);
+	return (
+		<Router>
+			<Navigation />
+			<Switch>
+				<Route path='/' exact component={Home} />
+				<Route path='/about' component={About} />
+				<Route path='/login' component={LogIn} />
+				<Route path='/properties' component={Properties} />
+				<Route path='/profile' component={Profile} />
+				<Route path='/property/:id' component={PropertyDetails} />
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;
