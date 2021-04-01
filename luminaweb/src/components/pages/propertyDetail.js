@@ -18,7 +18,7 @@ export default function PropertyDetails() {
             setProperty(response.data);
             setLoading(false);
         });
-    }, []);
+    }, [id]);
     
     if (isLoading) {
         return <div className="App">Loading...</div>;
