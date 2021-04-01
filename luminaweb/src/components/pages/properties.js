@@ -10,7 +10,7 @@ const Properties = () => {
 	useEffect(() => {
 		axios
 			.get("http://localhost:8000/api/v1/properties")
-			.then(result => setData(result.data.property))
+			.then(result => setData(result.data))
 	}, [])
 
 	const goToProperty = (id) => {
