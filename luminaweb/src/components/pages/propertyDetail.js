@@ -12,8 +12,9 @@ export default function PropertyDetails() {
     const { id } = useParams();
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/v1/property/${id}`).then(response => {
-        // axios.get(`http://share-your-universe.com/public/api/v1/property/${id}`).then(response => {
+        // axios.get(`http://localhost:8000/api/v1/property/${id}`).then(response => {
+        axios.get(`http://www.share-your-universe.com/public/api/v1/property/${id}`).then(response => {
+            console.log(response.data);
             setProperty(response.data);
             setLoading(false);
         });
